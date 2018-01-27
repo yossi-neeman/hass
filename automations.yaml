@@ -1,0 +1,13 @@
+- action:
+  - service: switch.turn_on
+  alias: Hot-Water
+  id: '1515355597403'
+  trigger:
+  - at: '23:00'
+    platform: time
+  condition:
+          condition: time
+          after: '15:00:00'
+          before: '02:00:00'
+          weekday:
+          - sat
